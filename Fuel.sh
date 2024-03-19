@@ -354,7 +354,7 @@ read -p "请输入您的ETH Sepolia RPC地址: " RPC
 # 开始配置并运行节点
 echo "开始配置并启动您的fuel节点..."
 
-screen -dmS Fuel bash -c "fuel-core run \
+screen -dmS Fuel bash -c "source /root/.bashrc; fuel-core run \
 --service-name '${NODE_NAME}' \
 --keypair '${SECRET}' \
 --relayer '${RPC}' \
