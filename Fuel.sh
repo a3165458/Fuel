@@ -340,6 +340,7 @@ cat > chainConfig.json << EOF
 EOF
 
 # 生成P2P密钥
+source /root/.bashrc
 echo "正在生成P2P密钥..."
 KEY_OUTPUT=$(fuel-core-keygen new --key-type peering)
 echo "${KEY_OUTPUT}"
