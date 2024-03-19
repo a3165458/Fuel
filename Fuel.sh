@@ -23,6 +23,10 @@ function check_and_set_alias() {
 
 function install_node() {
 
+# 安装基本组件
+sudo apt update
+sudo apt install screen -y
+
 # 安装Rust
 echo "正在安装Rust..."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
