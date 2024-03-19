@@ -341,6 +341,7 @@ EOF
 
 # 生成P2P密钥
 source /root/.bashrc
+export PATH=$HOME/.fuelup/bin:$PATH
 echo "正在生成P2P密钥..."
 KEY_OUTPUT=$(fuel-core-keygen new --key-type peering)
 echo "${KEY_OUTPUT}"
