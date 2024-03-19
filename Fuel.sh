@@ -31,7 +31,6 @@ source $HOME/.cargo/env
 # 安装Fuel服务
 echo "正在安装Fuel服务..."
 curl https://install.fuel.network | sh
-source $HOME/.fuelup/env
 sleep 5
 source /root/.bashrc
 
