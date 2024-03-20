@@ -32,7 +32,7 @@ function install_node() {
 
 # 安装基本组件
 sudo apt update
-sudo apt install screen -y
+sudo apt install screen git -y
 
 # 安装Rust
 echo "正在安装Rust..."
